@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import type { Task, TimerSettings, AmbientSound } from '../types'
-import { DEFAULT_TIMER_SETTINGS, DEFAULT_TEMPLATES } from '../types'
+import { DEFAULT_TEMPLATES } from '../types'
 import { playAmbient, stopAmbient, setVolume } from '../audio/soundGenerator'
 import './Timer.css'
 

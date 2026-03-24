@@ -8,7 +8,7 @@ interface Props {
   onDelete: (id: string) => void
 }
 
-export default function Diary({ entries, onSave, onDelete }: Props) {
+export default function Diary({ entries, onSave, onDelete: _onDelete }: Props) {
   const today = new Date().toISOString().slice(0, 10)
   const [selectedDate, setSelectedDate] = useState(today)
   const [content, setContent] = useState(() => {

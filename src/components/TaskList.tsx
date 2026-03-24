@@ -45,7 +45,7 @@ function SortableTask({ task, categories, onToggle, onDelete }: {
   )
 }
 
-export default function TaskList({ tasks, categories, onAdd, onToggle, onDelete, onUpdate, onReorder }: Props) {
+export default function TaskList({ tasks, categories, onAdd, onToggle, onDelete, onUpdate: _onUpdate, onReorder }: Props) {
   const [input, setInput] = useState('')
   const [estimated, setEstimated] = useState(0)
   const [deadline, setDeadline] = useState('')

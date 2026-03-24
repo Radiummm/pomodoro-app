@@ -47,8 +47,6 @@ export default function Heatmap({ sessions }: Props) {
   }
   if (week.length > 0) weeks.push(week)
 
-  const months = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
-
   return (
     <div className="heatmap">
       <h3>学习热力图</h3>

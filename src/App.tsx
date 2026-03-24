@@ -17,7 +17,8 @@ function load<T>(key: string, fallback: T, migrate?: (item: any) => any): T {
   const saved = localStorage.getItem(key)
   if (!saved) return fallback
   const parsed = JSON.parse(saved)
-  return migrate ? (Array.isArray(parsed) ? parsed.map(migrate) : migrate(parsed)) : parsed
+  if (migrate) return (Array.isArray(parsed) ? parsed.map(migrate) : migrate(parsed)) as T
+  return parsed as T
 }
 
 function App() {
