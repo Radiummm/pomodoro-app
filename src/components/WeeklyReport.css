@@ -1,0 +1,65 @@
+.weekly-report {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.weekly-report h3 {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.report-summary {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.report-stat { text-align: center; }
+.report-num { display: block; font-size: 1.8rem; font-weight: 600; color: var(--accent-gold); }
+.report-num.up { color: var(--accent-gold); }
+.report-num.down { color: var(--danger); }
+.report-label { font-size: 0.75rem; color: var(--text-secondary); }
+
+.report-best {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  padding: 10px 0;
+  border-top: 1px solid var(--border-subtle);
+  margin-bottom: 16px;
+}
+
+.report-pie h4 {
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.pie-bars { display: flex; flex-direction: column; gap: 8px; }
+
+.pie-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pie-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+.pie-name { font-size: 0.8rem; color: var(--text-primary); width: 40px; }
+
+.pie-bar-bg {
+  flex: 1;
+  height: 6px;
+  background: var(--bg-elevated);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.pie-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease;
+}
+
+.pie-pct { font-size: 0.75rem; color: var(--text-secondary); width: 35px; text-align: right; }

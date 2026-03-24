@@ -1,0 +1,102 @@
+.dashboard { animation: fadeIn 0.5s ease; }
+
+.dash-quote {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-style: italic;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.dash-progress {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.dash-ring-wrapper {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.dash-ring-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.dash-pct { font-size: 1.5rem; font-weight: 600; color: var(--accent-gold); }
+.dash-label { font-size: 0.7rem; color: var(--text-secondary); }
+
+.dash-stats-row {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.dash-stat { text-align: center; }
+.dash-num { display: block; font-size: 1.5rem; font-weight: 600; color: var(--text-primary); }
+.dash-desc { font-size: 0.75rem; color: var(--text-secondary); }
+
+.dash-section {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.dash-section h3 {
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.dash-urgent-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.85rem;
+}
+
+.dash-urgent-item:last-child { border-bottom: none; }
+
+.dash-days { color: var(--accent-amber); font-weight: 600; }
+.dash-days.overdue { color: var(--danger); }
+
+.dash-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.dash-actions button {
+  flex: 1;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  padding: 16px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+
+.dash-actions button:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+}
+
+@media (max-width: 600px) {
+  .dash-progress { flex-direction: column; text-align: center; }
+  .dash-stats-row { justify-content: center; }
+  .dash-actions { flex-direction: column; }
+}

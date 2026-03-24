@@ -1,0 +1,54 @@
+.achievements {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.achievements h3 {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.badge-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.badge {
+  padding: 16px 12px;
+  text-align: center;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.3s;
+}
+
+.badge.unlocked {
+  background: var(--bg-elevated);
+  border-color: var(--accent-gold-dim);
+}
+
+.badge.locked {
+  opacity: 0.4;
+}
+
+.badge-icon {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.badge-name {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.badge-desc {
+  display: block;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
