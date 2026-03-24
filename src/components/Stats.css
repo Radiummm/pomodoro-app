@@ -174,5 +174,14 @@
 .task-stat .count { color: var(--accent-gold); font-size: 0.9rem; }
 
 @media (max-width: 600px) {
-  .stats-cards { grid-template-columns: repeat(2, 1fr); }
+  .stats-cards { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+  .stats .card { padding: 14px; }
+  .stats .value { font-size: 1.5rem; }
+  .chart { padding: 16px; }
+  .bars { gap: 6px; height: 140px; }
+  .cat-name { width: auto; min-width: 30px; }
+  .cat-mins { width: auto; }
+  .goal-progress { flex-direction: column; gap: 8px; padding: 12px; }
+  .task-stats { padding: 16px; }
+  .category-stats { padding: 16px; }
 }

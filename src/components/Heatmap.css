@@ -48,3 +48,10 @@
   font-size: 0.7rem;
   color: var(--text-secondary);
 }
+
+@media (max-width: 600px) {
+  .heatmap { padding: 16px; }
+  .heatmap-cell { width: 10px; height: 10px; }
+  .heatmap-grid { gap: 2px; }
+  .heatmap-week { gap: 2px; }
+}

@@ -223,6 +223,14 @@
 }
 
 @media (max-width: 600px) {
-  .timer-display { font-size: 2.5rem; }
+  .timer { padding: 20px 16px; }
+  .timer-mode { gap: 4px; }
+  .timer-mode button { padding: 5px 10px; font-size: 0.8rem; }
   .timer-ring-wrapper { width: 200px; height: 200px; }
+  .timer-display { font-size: 2.5rem; }
+  .timer-settings { flex-direction: column; gap: 8px; }
+  .timer-controls button { padding: 10px 20px; font-size: 0.85rem; }
+  .quick-templates button { font-size: 0.75rem; padding: 4px 8px; }
+  .ambient-buttons button { font-size: 0.75rem; padding: 3px 8px; }
+  .task-select { font-size: 0.85rem; }
 }

@@ -110,5 +110,10 @@
 .draggable-task:active { cursor: grabbing; }
 
 @media (max-width: 600px) {
-  .quadrant-grid { grid-template-columns: 1fr; }
+  .quadrant-grid { grid-template-columns: 1fr; gap: 8px; }
+  .quadrant-cell { min-height: 120px; padding: 12px; }
+  .unassigned { padding: 12px; }
+  .unassigned-list { gap: 6px; }
+  .draggable-task { padding: 6px 10px; font-size: 0.8rem; }
+  .quadrant-task { padding: 6px 8px; font-size: 0.8rem; }
 }

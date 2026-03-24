@@ -15,6 +15,7 @@
   display: flex;
   gap: 24px;
   margin-bottom: 16px;
+  flex-wrap: wrap;
 }
 
 .report-stat { text-align: center; }
@@ -63,3 +64,11 @@
 }
 
 .pie-pct { font-size: 0.75rem; color: var(--text-secondary); width: 35px; text-align: right; }
+
+@media (max-width: 600px) {
+  .weekly-report { padding: 16px; }
+  .report-summary { gap: 16px; }
+  .report-num { font-size: 1.4rem; }
+  .pie-name { width: auto; min-width: 30px; }
+  .pie-pct { width: auto; }
+}

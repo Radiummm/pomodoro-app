@@ -144,5 +144,16 @@
 
 @media (max-width: 600px) {
   .diary-layout { grid-template-columns: 1fr; }
-  .diary-sidebar { display: none; }
+  .diary-sidebar {
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .editor-header {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .editor-header input[type="date"] { flex: 1; min-width: 0; }
+  .editor-tabs { flex: 0; }
+  .diary-editor textarea { min-height: 250px; font-size: 0.85rem; }
+  .diary-preview-content { font-size: 0.85rem; }
 }

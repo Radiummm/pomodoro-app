@@ -52,3 +52,11 @@
   font-size: 0.7rem;
   color: var(--text-secondary);
 }
+
+@media (max-width: 600px) {
+  .achievements { padding: 16px; }
+  .badge-grid { grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 8px; }
+  .badge { padding: 12px 8px; }
+  .badge-icon { font-size: 1.5rem; margin-bottom: 6px; }
+  .badge-name { font-size: 0.8rem; }
+}

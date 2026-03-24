@@ -143,3 +143,28 @@
 }
 
 .task-list .delete:hover { color: var(--danger); }
+
+@media (max-width: 600px) {
+  .task-list { margin-top: 16px; }
+  .input-area { gap: 6px; }
+  .input-area input[type="text"] { min-width: 100%; }
+  .input-area .est-input { width: 50px; }
+  .input-area .deadline-input,
+  .input-area .cat-select { flex: 1; min-width: 0; }
+  .input-area button { width: 100%; }
+  .task-list li {
+    gap: 8px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+  .task-list .text {
+    flex: 1 1 60%;
+    font-size: 0.85rem;
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .task-list .pomodoros { font-size: 0.75rem; }
+  .deadline-badge { font-size: 0.7rem; padding: 2px 6px; }
+  .drag-handle { font-size: 0.9rem; }
+}

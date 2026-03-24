@@ -96,7 +96,11 @@
 }
 
 @media (max-width: 600px) {
-  .dash-progress { flex-direction: column; text-align: center; }
-  .dash-stats-row { justify-content: center; }
+  .dash-progress { flex-direction: column; text-align: center; gap: 16px; padding: 16px; }
+  .dash-stats-row { justify-content: center; gap: 16px; }
+  .dash-num { font-size: 1.2rem; }
   .dash-actions { flex-direction: column; }
+  .dash-actions button { padding: 12px; }
+  .dash-section { padding: 14px; }
+  .dash-quote { font-size: 0.85rem; padding: 12px; }
 }

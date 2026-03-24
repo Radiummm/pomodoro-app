@@ -92,3 +92,11 @@
   color: var(--accent-gold);
   font-size: 1rem;
 }
+
+@media (max-width: 600px) {
+  .daily-goal { padding: 16px; }
+  .goal-header { flex-direction: column; gap: 8px; align-items: flex-start; }
+  .goal-ring-wrapper { width: 130px; height: 130px; }
+  .goal-ring-wrapper svg { width: 130px; height: 130px; }
+  .goal-minutes { font-size: 1.5rem; }
+}
